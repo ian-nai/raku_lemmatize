@@ -1,0 +1,22 @@
+{
+    "name": "lemmatize",
+    "auth": "zef:ian-nai",
+    "version": "0.0.1",
+    "api": 0,
+  
+    "provides": {
+      "lemmatize": "lib/lemmatize.rakumod"
+    },
+  
+    "depends":       [],
+    "build-depends": [],
+    "test-depends":  [],
+
+    "resources": [
+        "lemmas.csv",
+        "lemmas_test.csv"
+    ],
+  
+    "tags":        [ "lemmatize", "lemma", "nlp", "text analysis" ],
+    "description": "Lemmatize strings and lists using a provided English dataset or by providing your own."
+  }

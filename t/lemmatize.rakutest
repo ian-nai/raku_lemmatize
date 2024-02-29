@@ -1,0 +1,22 @@
+use Test;      # a Standard module included with Rakudo 
+use lib '.';
+use lemmatize; 
+
+ 
+plan 4;
+ 
+# .... tests 
+my $test_sent = "Having a test.";
+
+
+my %lemma_hash = construct_hash('resources/lemmas_test.csv');
+is %lemma_hash<have>.[0][0], 'had';
+
+is words_to_array($test_sent)[0], 'having';
+
+my @words_in_string = words_to_array($test_sent);
+is lemmatize_array(@words_in_string)[0], 'have';
+
+is lemmatize_string($test_sent)[0], 'have';
+
+done-testing; 
