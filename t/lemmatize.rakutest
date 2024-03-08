@@ -9,7 +9,7 @@ plan 4;
 my $test_sent = "Having a test.";
 
 
-my %lemma_hash = construct_hash('resources/lemmas_test.csv');
+my %lemma_hash = construct_hash('resources/en.csv');
 is %lemma_hash<have>.[0][0], 'had';
 
 is words_to_array($test_sent)[0], 'having';
