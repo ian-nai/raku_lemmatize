@@ -1,7 +1,7 @@
 {
     "name": "lemmatize",
     "auth": "zef:ian-nai",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "api": 0,
   
     "provides": {
@@ -13,10 +13,35 @@
     "test-depends":  [],
 
     "resources": [
-        "lemmas.csv",
+        "en.csv",
+         "sk.csv",
+         "gl.csv",
+         "ca.csv",
+         "gv.csv",
+         "sv.csv",
+         "es.csv",
+         "cy.csv",
+         "cs.csv",
+         "fr.csv",
+         "fa.csv",
+         "gd.csv",
+         "sl.csv",
+         "ga.csv",
+         "bg.csv",
+         "ast.csv",
+         "pt.csv",
+         "it.csv",
+         "hu.csv",
+         "ru.csv",
+         "de.csv",
+         "ro.csv",
+         "uk.csv",
+         "et.csv",
         "lemmas_test.csv"
     ],
+
+    "source-url": "https://github.com/ian-nai/raku_lemmatize/",
   
-    "tags":        [ "lemmatize", "lemma", "nlp", "text analysis" ],
-    "description": "Lemmatize strings and lists using a provided English dataset or by providing your own."
+    "tags":        [ "lemmatize", "lemma", "nlp", "text analysis", "text"],
+    "description": "Lemmatize strings and lists in 24 languages using provided datasets, or by providing your own."
   }
